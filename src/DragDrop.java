@@ -4,10 +4,10 @@ import java.awt.*;
 
 public class DragDrop extends JFrame {
 
-    private ImageIcon animaux = new ImageIcon("src/eren (1).jpg");
-    DragPanel drag = new  DragPanel(animaux.getImage());
+    private Image yeet;
     private JFrame window;
-    public DragDrop(){
+    public DragDrop(Image yeet){
+        DragPanel drag = new  DragPanel(yeet);
 
         this.add(drag);
         this.setTitle("boom");
